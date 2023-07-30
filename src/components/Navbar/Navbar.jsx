@@ -52,7 +52,7 @@ function Navbar() {
                                     >
                                     </CartProduct>
                                 ))}
-                                <h3>مجموع قیمت: {cart.getTotalAmount()}</h3>
+                                <h3>مجموع قیمت: {cart.getTotalAmount()} تومان</h3>
                             </>
                         ) : (
                             <h3>سبد خرید خالی است</h3>
