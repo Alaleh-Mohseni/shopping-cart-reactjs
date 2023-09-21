@@ -20,10 +20,10 @@ function CartProduct({ id, quantity }) {
                         style={{ objectFit: 'cover' }}
                     />
                 </Col>
-                <Col md='8' xs='8' className='card__modal-text'>
-                    <Card.Title className='card__modal-title'>{productData.title}</Card.Title>
-                    <Card.Text>تعداد: {quantity}</Card.Text>
-                    <Card.Text>قیمت: {quantity * productData.price} تومان</Card.Text>
+                <Col md='8' xs='8' className='card__modal-text px-3'>
+                    <Card.Title className='card__modal-title pt-2'>{productData.title}</Card.Title>
+                    <Card.Text>تعداد: {Number(quantity).toLocaleString('fa-IR')}</Card.Text>
+                    <Card.Text>قیمت: {Number(quantity * productData.price).toLocaleString('fa-IR')} تومان</Card.Text>
                     <Button
                         onClick={() => cart.deleteFromCart(id)}
                         size='sm'
