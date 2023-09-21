@@ -28,7 +28,7 @@ function Navbar() {
                         className='text-white'
                         onClick={handleShow}
                     >
-                        ({productsCount}) <BsCart className='mx-2'></BsCart>
+                        ({Number(productsCount).toLocaleString('fa-IR')}) <BsCart className='mx-2'></BsCart>
                         سبد خرید
                     </Button>
                 </NavbarBs.Collapse>
