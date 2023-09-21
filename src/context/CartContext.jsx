@@ -62,7 +62,7 @@ export function CartProvider({ children }) {
             totalAmount += productData.price * item.quantity
         })
 
-        return totalAmount
+        return Number(totalAmount).toLocaleString('fa-IR')
     }
 
 
