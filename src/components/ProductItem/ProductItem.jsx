@@ -21,13 +21,13 @@ function ProductItem({ product }) {
                     {product.title} {product.ml} ML
                 </Card.Title>
                 <Card.Text align='right' className='text-dark' dir='rtl'>
-                    {product.price} تومان
+                    {Number(product.price).toLocaleString('fa-IR')} تومان
                 </Card.Text>
                 {productQuantity > 0 ? (
                     <>
                         <Form as={Row}>
                             <Form.Label column='true' sm='6' className='text-dark'>
-                                تعداد: {productQuantity}
+                                تعداد: {Number(productQuantity).toLocaleString('fa-IR')}
                             </Form.Label>
                             <Col sm='6'>
                                 <Button
